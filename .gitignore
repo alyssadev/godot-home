@@ -1,0 +1,6 @@
+.import/
+*.png
+*.import
+*.wav
+*.mp3
+.DS_Store
