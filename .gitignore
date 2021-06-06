@@ -4,6 +4,8 @@
 *.wav
 *.mp3
 .DS_Store
+!/docs/*
+/docs/*.import
 /export/*
 !/export/html5
 !/export/html5/*
