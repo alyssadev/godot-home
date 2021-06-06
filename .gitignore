@@ -4,3 +4,5 @@
 *.wav
 *.mp3
 .DS_Store
+export/
+!export/html5/*
