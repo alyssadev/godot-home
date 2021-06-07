@@ -29,5 +29,7 @@ func _physics_process(_delta):
 	else:
 		if int(self.position.y) % 32 == 0:
 			velocity.y = 0
+	
+	
 
 	move_and_collide(velocity)
