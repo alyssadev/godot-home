@@ -9,6 +9,9 @@ mac:
 linux:
 	godot project.godot --no-window --export "Linux/X11" export/linux/home.x86_64
 
+uwp:
+	godot project.godot --no-window --export "UWP" export/uwp/home.uwp.appx
+
 html5:
 	godot project.godot --no-window --export HTML5 docs/index.html
 
