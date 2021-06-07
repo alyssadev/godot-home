@@ -7,6 +7,3 @@
 !/docs/*
 /docs/*.import
 /export/*
-!/export/html5
-!/export/html5/*
-/export/html5/*.import
