@@ -20,6 +20,8 @@ func _physics_process(_delta):
 	elif Input.is_action_pressed("ui_left"):
 		velocity.x = -2
 	else:
+		if int(self.position.x) % 2 != 0:
+			self.position.x += 1
 		if int(self.position.x) % 32 == 0:
 			velocity.x = 0
 	if Input.is_action_pressed("ui_up"):
@@ -27,6 +29,8 @@ func _physics_process(_delta):
 	elif Input.is_action_pressed("ui_down"):
 		velocity.y = 2
 	else:
+		if int(self.position.y) % 2 != 0:
+			self.position.y += 1
 		if int(self.position.y) % 32 == 0:
 			velocity.y = 0
 	
