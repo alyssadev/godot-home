@@ -16,16 +16,18 @@ func _physics_process(_delta):
 		self.position.y = int(self.position.y) % int(res.y)
 
 	if Input.is_action_pressed("ui_right"):
-		velocity.x = 3
+		velocity.x = 2
 	elif Input.is_action_pressed("ui_left"):
-		velocity.x = -3
+		velocity.x = -2
 	else:
-		velocity.x = 0
+		if int(self.position.x) % 32 == 0:
+			velocity.x = 0
 	if Input.is_action_pressed("ui_up"):
-		velocity.y = -3
+		velocity.y = -2
 	elif Input.is_action_pressed("ui_down"):
-		velocity.y = 3
+		velocity.y = 2
 	else:
-		velocity.y = 0
+		if int(self.position.y) % 32 == 0:
+			velocity.y = 0
 
 	move_and_collide(velocity)

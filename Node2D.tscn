@@ -6,7 +6,7 @@
 [node name="World" type="Node2D"]
 
 [node name="Player" type="KinematicBody2D" parent="."]
-position = Vector2( 28.8414, 24.2435 )
+position = Vector2( 32, 32 )
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
